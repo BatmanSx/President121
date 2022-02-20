@@ -1,17 +1,17 @@
 {
-  "name": "president",
+  "name": "ecommerce",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
-    "client": "cd zarzadzanie && npm run start",
+    "client": "cd client && npm run start",
     "server-install": "npm install",
-    "client-install": "cd zarzadzanie && npm install",
-    "install-all": "concurrently \"npm run server-install\" \"npm run zarzadzanie-install\"",
-    "dev": "concurrently \"npm run server\" \"npm run zarzadzanie\"",
-    "heroku-postbuild": "cd zarzadzanie && npm install && npm run build"
+    "client-install": "cd client && npm install",
+    "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
